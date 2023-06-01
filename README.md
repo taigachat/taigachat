@@ -27,6 +27,14 @@ TaigaChat in its current state has (a):
 For more information regarding the goals and design of TaigaChat navigate
 to [taigachat.com](http://taigachat.com)
 
+## Platform support
+TaigaChat is supported on the following platforms:
+- Windows
+- Linux
+- Web
+- Android (W.I.P)
+In the future, hopefully more platforms will be added to this list.
+
 ## Screenshots
 ![main screen](https://taigachat.com/screenshots/main_screen.png)
 ![settings](https://taigachat.com/screenshots/settings.png)
@@ -36,3 +44,29 @@ If you have an idea for a feature or improvement, please create an issue
 and discuss it first. In most cases, I would prefer to implement the feature
 myself. However, I do not wish to discourage people from playing around with
 the code - to the contrary, I would feel honoured if someone did.
+
+## Installation
+### Linux
+Installation on Linux should be done via the AppImage 
+(which has not been realeased yet, but can easily be built).
+
+### Web
+Simply navigate to https://cdn.taigachat.se/versions/build and optionally install 
+it as a PWA.
+
+### Windows
+A prebuilt Windows MSI file can be found [here](https://cdn.taigachat.se/versions/TaigaChat.msi).
+
+### Server
+To start the server simply cd into the server directory and run:
+```
+deno run --unstable --allow-run --allow-read --allow-net --allow-write --allow-env server\server.ts
+```
+Configuration can be done by setting environment variables. These environment variables
+should always start with `TAIGACHAT_*` and the definitions (for the server) can be found 
+[here](server/server/config.ts).
+
+## Building
+For building the project please see:
+[Building The Client](client/building.md)  
+[Building The Server](server/building.md)  
