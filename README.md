@@ -27,12 +27,13 @@ TaigaChat in its current state has (a):
 For more information regarding the goals and design of TaigaChat navigate
 to [taigachat.com](http://taigachat.com)
 
-## Platform support
+## Platform Support
 TaigaChat is supported on the following platforms:
 - Windows
 - Linux
 - Web
 - Android (W.I.P)
+
 In the future, hopefully more platforms will be added to this list.
 
 ## Screenshots
