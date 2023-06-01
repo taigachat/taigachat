@@ -1,0 +1,19 @@
+{
+  "short_name": "TaigaChat",
+  "name": "TaigaChat",
+  "icons": [
+    {
+      "src": "./static/icon-144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#060f1f",
+  "display": "standalone",
+  "scope": "./",
+  "theme_color": "#060f1f",
+  "shortcuts": [],
+  "description": "A Client for The Taiga Chat Protocol",
+  "screenshots": []
+}

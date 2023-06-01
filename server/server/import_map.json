@@ -1,0 +1,7 @@
+{
+    "imports": {
+        "@peculiar/x509": "npm:@peculiar/x509@1.9.2",
+        "zod": "https://deno.land/x/zod@v3.12.0/index.ts",
+        "encoding_schemes": "./encoding_schemes.ts"
+    }
+}

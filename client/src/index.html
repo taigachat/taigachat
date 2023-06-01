@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <title>Loading Client</title>
+        <meta charset="utf8" />
+        <!-- TODO: Add report-uri (maybe, this can be bad for modding so maybe not) and others (https://csp.withgoogle.com/docs/strict-csp.html) -->
+        <meta name="description" content="A Decentralized Chat App">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src * blob:; media-src * data:; connect-src *; style-src 'self' 'unsafe-inline' %SNOWPACK_PUBLIC_CSP%">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#060f1e">
+        <link rel="icon" type="image/png" href="favicon.png" />
+        <link rel="stylesheet" href="appindex.css" />
+        <link rel="manifest" href="./manifest.json">
+        <meta name="taigachat:central_url" content="%SNOWPACK_PUBLIC_CENTRAL_URL%">
+        <meta name="taigachat:version" content="%SNOWPACK_PUBLIC_VERSION%">
+        <meta name="taigachat:auto_update_url" content="%SNOWPACK_PUBLIC_UPDATE_URL%">
+        <style>
+            /* Don't flashbang our dear users. */
+            body {
+                background-color: #060f1f;
+            }
+            .starting-cover {
+                background-color: #060f1f;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: 900;
+            }
+            /* Add spinning wheel? */
+        </style>
+    </head>
+    <body>
+        <div class="starting-cover"></div>
+        <div id="app-container"></div>
+        <div id="media-elements"></div>
+        <script type="module" src="index.js"></script>
+    </body>
+</html>

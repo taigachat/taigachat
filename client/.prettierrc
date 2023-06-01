@@ -1,0 +1,8 @@
+trailingComma: 'es5'
+tabWidth: 4
+semi: false
+singleQuote: true
+svelteBracketNewLine: false
+svelteIndentScriptAndStyle: false
+printWidth: 110
+svelteSortOrder: options-scripts-styles-markup

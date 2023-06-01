@@ -1,0 +1,39 @@
+secret_alpha_deploy.sh
+/genicons/
+build/
+dist/
+.cache/
+coverage/
+/dist/*
+!dist/index.html
+node_modules/
+# Some of these are really questionable and I really don't remember why these are placed here
+/static/icons.woff2
+/src/icons.css
+*.log
+/signing_keys.json
+/testground
+/versions
+harmonific.launcher.json
+taigachat.json
+taigachat.launcher.json
+dep_graph.png
+/output.png
+/dependencygraph.svg
+
+# Editors
+.vscode
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# WiX files
+*.msi 
+*.wixobj
+*.wixpdb

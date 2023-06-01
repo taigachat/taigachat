@@ -1,0 +1,46 @@
+{
+    "name": "TaigaChat",
+    "license": "AGPL-3.0",
+    "description": "The Standard TaigaChat Client",
+    "version": "0.3.30",
+    "author": "AB",
+    "devDependencies": {
+        "@snowpack/plugin-svelte": "3.7.*",
+        "@snowpack/plugin-typescript": "^1.2.1",
+        "@tsconfig/svelte": "^1.0.10",
+        "electron": "^24.0.0",
+        "electron-builder": "^23.6.0",
+        "prettier": "^2.3.2",
+        "prettier-plugin-svelte": "^2.3.1",
+        "snowpack": "^3.8.6",
+        "svelte": "^3.42.2",
+        "svelte-check": "^2.2.4",
+        "svelte-loader": "3.1.2",
+        "typescript": "^4.3.5",
+        "dependency-cruiser": "^12.7.0"
+    },
+    "scripts": {
+        "clean": "rm --interactive=once --one-file-system -r dist/ build/",
+        "format": "prettier --write --plugin-search-dir=. .",
+        "linecount": "grep --exclude=\"emojis.ts\" -Rn \"\" src | wc -l"
+    },
+    "dependencies": {
+        "@peculiar/x509": "^1.9.3",
+        "mediasoup-client": "^3.6.84",
+        "tslib": "^2.5.0",
+        "zod": "^3.11.6"
+    },
+    "build": {
+        "files": [
+            "build/*",
+            "build/static/**",
+            "package.json",
+            "index.js",
+            "preload.js"
+        ],
+        "artifactName": "${name}-${arch}-${os}-${version}.${ext}",
+        "mac": {
+            "category": "public.app-category.social-networking"
+        }
+    }
+}
