@@ -1,0 +1,7 @@
+zig-cache
+.zig-cache
+zig-out
+main.exe
+main.pdb
+libmain.a
+libmain.a.o

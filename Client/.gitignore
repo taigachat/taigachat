@@ -1,0 +1,40 @@
+# Packaging and Stuff
+.cache/
+coverage/
+node_modules/
+/vite.config.mjs.timestamp-*
+
+# Build System
+/top/out/
+/artout
+/dist
+/Build
+
+# TaigaChat Specifics
+/signing_keys.json
+launcher.env
+installation.env
+extraconfig.json
+
+# Dependency Visualization
+dep_graph.png
+/output.png
+/dependencygraph.svg
+
+# Editors
+.vscode
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.log
+
+# WiX files
+*.msi 
+*.wixobj
+*.wixpdb

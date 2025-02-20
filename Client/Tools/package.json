@@ -1,0 +1,12 @@
+{
+    "name": "artifact-tool",
+    "license": "UNLICENSED",
+    "dependencies": {
+        "@types/node": "^18.15.11",
+        "ts-node": "^10.9.1"
+    },
+    "type": "module",
+    "scripts": {
+        "artifact-tool": "ts-node artifact_tool.ts"
+    }
+}

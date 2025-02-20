@@ -1,0 +1,12 @@
+{
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": true,
+    "singleQuote": false,
+    "bracketSameLine": true,
+    "svelteIndentScriptAndStyle": false,
+    "printWidth": 110,
+    "svelteSortOrder": "options-scripts-styles-markup",
+    "plugins": ["prettier-plugin-svelte"],
+    "overrides": [{ "files": "*.svelte", "options": { "parser": "svelte" } }]
+}
