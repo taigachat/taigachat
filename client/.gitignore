@@ -1,22 +1,22 @@
-secret_alpha_deploy.sh
-/genicons/
-build/
-dist/
+# Packaging and Stuff
 .cache/
 coverage/
-/dist/*
-!dist/index.html
 node_modules/
-# Some of these are really questionable and I really don't remember why these are placed here
-/static/icons.woff2
-/src/icons.css
-*.log
+/vite.config.mjs.timestamp-*
+
+# Build System
+/top/out/
+/artout
+/dist
+/Build
+
+# TaigaChat Specifics
 /signing_keys.json
-/testground
-/versions
-harmonific.launcher.json
-taigachat.json
-taigachat.launcher.json
+launcher.env
+installation.env
+extraconfig.json
+
+# Dependency Visualization
 dep_graph.png
 /output.png
 /dependencygraph.svg
@@ -32,6 +32,7 @@ dep_graph.png
 .Trashes
 ehthumbs.db
 Thumbs.db
+*.log
 
 # WiX files
 *.msi 

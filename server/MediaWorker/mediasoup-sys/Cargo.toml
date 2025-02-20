@@ -1,0 +1,16 @@
+[package]
+name = "mediasoup-sys"
+version = "0.9.1"
+edition = "2021"
+
+links = "mediasoup-worker"
+
+[build-dependencies]
+planus-codegen = "0.4.0"
+planus-translation = "0.4.0"
+
+[dependencies]
+planus = "0.4.0"
+serde = { version = "1.0.215", features = ["derive"] }
+
+

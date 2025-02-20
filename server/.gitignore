@@ -1,4 +1,7 @@
+/result
+/scripts/result
 backup-data
+out
 data
 data2
 data3
@@ -17,5 +20,7 @@ bad-sfu-bridge
 build-dir
 .flatpak-builder
 /.env
+/Source/.env
 minio.exe
 s3data
+node_modules

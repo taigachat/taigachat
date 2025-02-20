@@ -21,8 +21,9 @@ TaigaChat in its current state has (a):
 6. Update Button
 7. Server Profile Synchronization
 8. Role-based Permissions System
-9. Cryptographic Offline Login
+9. Cryptographic Offline Login (UI is still lacking here)
 10. Hosted Servers
+11. Password-based E2E Encryption
 
 For more information regarding the goals and design of TaigaChat navigate
 to [taigachat.com](http://taigachat.com)
@@ -48,11 +49,11 @@ the code - to the contrary, I would feel honoured if someone did.
 
 ## Installation
 ### Linux
-Installation on Linux should be done via the AppImage 
+Installation on Linux should be done via the AppImage
 (which has not been realeased yet, but can easily be built).
 
 ### Web
-Simply navigate to https://cdn.taigachat.se/versions/build and optionally install 
+Simply navigate to https://app.taigachat.se/ and optionally install
 it as a PWA.
 
 ### Windows
@@ -61,13 +62,17 @@ A prebuilt Windows MSI file can be found [here](https://cdn.taigachat.se/version
 ### Server
 To start the server simply cd into the server directory and run:
 ```
-deno run --unstable --allow-run --allow-read --allow-net --allow-write --allow-env server\server.ts
+pnpm i
+node --experimental-strip-types server.js
 ```
 Configuration can be done by setting environment variables. These environment variables
-should always start with `TAIGACHAT_*` and the definitions (for the server) can be found 
-[here](server/server/config.ts).
+should always start with `TAIGACHAT_*` and the definitions (for the server) can be found
+[here](Server/Source/config.ts).
 
 ## Building
 For building the project please see:
-[Building The Client](client/building.md)  
-[Building The Server](server/building.md)  
+[Building The Client](Client/building.md)
+[Building The Server](Server/building.md)
+
+Copyright © 2025, Alexander Björkman
+

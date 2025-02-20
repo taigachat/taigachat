@@ -1,9 +1,0 @@
-[package]
-name = "mediasoup-sys"
-version = "0.5.4"
-edition = "2021"
-
-links = "mediasoup-worker"
-
-[dependencies]
-

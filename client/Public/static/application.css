@@ -1,0 +1,341 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("./Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-display: swap;
+}
+/* Add italic support to Montserrat */
+
+html,
+body {
+    overscroll-behavior-y: contain;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", "Rubik", "NotoColorEmoji", sans-serif;
+    user-select: none;
+
+    --bold-text: "wght" 700;
+
+    --icon-color: #ffffff40;
+    --icon-color-hover: #fffffff0;
+
+    --background-opacity: #ffffff10;
+
+    --white1: #eceff4;
+
+    --green1: #a3be8c;
+    --green2: #7ca25c;
+
+    --red1: #bf616a;
+    --red2: #a9444e;
+
+    --blue1: #81a1c1;
+    --blue2: #5e81ac;
+    --blue3: #88c0d0;
+
+    --orange1: #d08770;
+    --pink1: #b48ead;
+
+    --yellow1: #ebcb8b;
+    --yellow2: #e4b860;
+
+    color: var(--white1);
+}
+
+div.__ns__pop2top {
+    z-index: initial !important;
+}
+
+.click-disabled {
+    pointer-events: none;
+}
+.click-enabled {
+    pointer-events: all;
+}
+
+.animate-fade {
+    flex-grow: 1;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+}
+
+@keyframes animation-fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animation-fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+a,
+a:visited {
+    color: var(--blue1);
+}
+
+a:hover {
+    color: var(--blue2);
+}
+
+img {
+    pointer-events: none;
+}
+
+b {
+    font-weight: unset;
+    font-variation-settings: var(--bold-text);
+}
+
+div,
+textarea,
+input {
+    box-sizing: border-box;
+    color: inherit;
+}
+
+textarea,
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-color: var(--background-opacity);
+    border-radius: 5px;
+    padding: 6px 3px;
+}
+
+textarea {
+    resize: none;
+    scrollbar-width: none;
+}
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+button,
+button:hover {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: var(--text1);
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    font-variation-settings: inherit;
+}
+
+#app-container button.big-button {
+    margin: 10px;
+    padding: 4px;
+    font-size: 1em;
+    text-transform: capitalize;
+    transition: box-shadow color background-color 150ms;
+    border: 1px solid;
+    border-radius: 7px; /* TODO: For some reason, WaterFox sets this to 0 in userChrome.css, very stupid */
+}
+
+.big-button.red {
+    border-color: var(--red1);
+    color: var(--red1);
+    box-shadow:
+        0 0 1px inset var(--red1),
+        0 0 1px var(--red1);
+}
+.big-button.red:hover,
+.big-button.red.disabled {
+    border-color: var(--red2);
+    color: var(--red2);
+    box-shadow:
+        0 0 1px inset var(--red2),
+        0 0 1px var(--red2);
+}
+.big-button.blue {
+    border-color: var(--blue1);
+    color: var(--blue1);
+    box-shadow:
+        0 0 1px inset var(--blue1),
+        0 0 1px var(--blue1);
+}
+.big-button.blue:hover,
+.big-button.blue.disabled {
+    border-color: var(--blue2);
+    color: var(--blue2);
+    box-shadow:
+        0 0 1px inset var(--blue2),
+        0 0 1px var(--blue2);
+}
+.big-button.yellow {
+    border-color: var(--yellow1);
+    color: var(--yellow1);
+    box-shadow:
+        0 0 1px inset var(--yellow1),
+        0 0 1px var(--yellow1);
+}
+.big-button.yellow:hover,
+.bigbutton.yellow.disabled {
+    border-color: var(--yellow2);
+    color: var(--yellow2);
+    box-shadow:
+        0 0 1px inset var(--yellow2),
+        0 0 1px var(--yellow2);
+}
+.big-button.green {
+    border-color: var(--green1);
+    color: var(--green1);
+    box-shadow:
+        0 0 1px inset var(--green1),
+        0 0 1px var(--green1);
+}
+.big-button.green:hover,
+.big-button.green.disabled {
+    border-color: var(--green2);
+    color: var(--green2);
+    box-shadow:
+        0 0 1px inset var(--green2),
+        0 0 1px var(--green2);
+}
+
+.cross-button {
+    color: #888888; /* use var instead */
+    font-variation-settings: var(--bold-text);
+}
+.cross-button:hover {
+    color: var(--white1);
+    box-shadow:
+        -5px 0 5px #ffffff40,
+        5px 0 5px #ffffff40,
+        0 -5px 5px #ffffff40,
+        0 5px 5px #ffffff40;
+    background-color: #ffffff60;
+}
+
+svg.icon {
+    vertical-align: bottom;
+}
+
+.font-icon {
+    font-family: "Icons" !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.panel-glass {
+    background-color: var(--background-opacity);
+    color: var(--white1);
+}
+
+.panel-border {
+    border-radius: 16px;
+    border: 1px solid rgba(206, 206, 206, 0.5);
+    box-shadow: 0 4px 30px #00000040;
+    margin: 6px;
+}
+
+input.panel-glass {
+    border-bottom: 2px solid var(--background-opacity);
+    transition: 200ms border-bottom-color;
+}
+input.panel-glass:focus-visible,
+input.panel-glass:hover {
+    border-bottom-color: var(--blue2);
+}
+
+/* We include the hover because otherwise button:hover might override the background. */
+.toggle-switch,
+.toggle-switch:hover {
+    display: inline-block;
+    background-color: var(--white1);
+    height: 20px;
+    width: 40px;
+    border-radius: 25%/50%;
+    vertical-align: bottom;
+    transition: background-color 250ms;
+}
+
+.toggle-switch.toggled {
+    background-color: var(--blue2);
+}
+
+.toggle-switch div {
+    background-color: var(--blue3);
+    height: calc(100% - 8px);
+    border-radius: 50%;
+    transition: margin 250ms;
+    margin: 4px 60% 4px 4px;
+}
+
+.toggle-switch.toggled div {
+    margin: 4px 4px 4px 60%;
+}
+
+.magic-top-height {
+    min-height: 50px;
+}
+
+.settings-back {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    font-size: 30px;
+    transition: color 200ms;
+}
+
+.web-file-selector {
+    position: fixed;
+    top: 200vh;
+}
+
+.pretty-scroll::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.pretty-scroll::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+.pretty-scroll::-webkit-scrollbar-thumb {
+    background: #8d68c9c2;
+    border: 0px none #fff;
+    border-radius: 50px;
+}
+
+.pretty-scroll::-webkit-scrollbar-thumb:hover {
+    background: #814dd7c2;
+}
+
+.pretty-scroll::-webkit-scrollbar-track {
+    background: var(--background-opacity);
+    border: 0px none #fff;
+    border-radius: 53px;
+}
+
+#app-container {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    height: 100svh;
+}

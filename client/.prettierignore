@@ -1,0 +1,12 @@
+/Build/
+/AppLauncher/
+/Authentication/
+/AndroidClient/
+/node_modules/
+/Fetcher/
+/Tools/Client.wxs
+/Public/static/emojis.json
+/pnpm-lock.yaml
+
+
+

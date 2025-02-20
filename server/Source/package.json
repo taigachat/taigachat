@@ -1,0 +1,18 @@
+{
+    "name": "taigaserver",
+    "version": "0.4.0",
+    "module": "server.js",
+    "type": "module",
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    },
+    "main": "server.js",
+    "dependencies": {
+        "@types/better-sqlite3": "^7.6.11",
+        "@types/node": "^22.5.5",
+        "better-sqlite3": "^11.3.0",
+        "minio": "^8.0.1",
+        "prettier": "^3.5.1",
+        "zod": "^3.23.8"
+    }
+}
