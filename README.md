@@ -1,4 +1,15 @@
 # TaigaChat
+![Client package.json Version](https://img.shields.io/github/package-json/v/taigachat/taigachat/master?filename=Client%2Fpackage.json&label=TaigaChat)
+![GitHub License](https://img.shields.io/github/license/taigachat/taigachat?style=flat&label=License&color=%2332CD32)
+![Commit Activity](https://img.shields.io/github/commit-activity/t/taigachat/taigachat?label=Commits)
+![GitHub Issues](https://img.shields.io/github/issues/taigachat/taigachat?label=Issues)
+![Website](https://img.shields.io/website?url=https%3A%2F%2Fapp.taigachat.se&up_message=Working&down_message=Problems&label=Web%20App)
+![Web App](https://img.shields.io/website?url=https%3A%2F%2Fapp.taigachat.se&up_message=Reachable&down_message=Problems&label=Web%20App)
+![Login Service](https://img.shields.io/website?url=https%3A%2F%2Flogin.taigachat.se%2F&up_message=Reachable&down_message=Problems&label=Login%20Service)
+![Created](https://img.shields.io/badge/Created-Mars%202021-%23EEE?style=flat)
+
+
+
 This repository contains source code
 for the TaigaChat client. As well as source code for the reference
 server implementation. The code is licensed under AGPL-3.0
