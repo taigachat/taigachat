@@ -3,27 +3,33 @@
 ![GitHub License](https://img.shields.io/github/license/taigachat/taigachat?style=flat&label=License&color=%2332CD32)
 ![Commit Activity](https://img.shields.io/github/commit-activity/t/taigachat/taigachat?label=Commits)
 ![GitHub Issues](https://img.shields.io/github/issues/taigachat/taigachat?label=Issues)
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fapp.taigachat.se&up_message=Working&down_message=Problems&label=Web%20App)
-![Web App](https://img.shields.io/website?url=https%3A%2F%2Fapp.taigachat.se&up_message=Reachable&down_message=Problems&label=Web%20App)
-![Login Service](https://img.shields.io/website?url=https%3A%2F%2Flogin.taigachat.se%2F&up_message=Reachable&down_message=Problems&label=Login%20Service)
 ![Created](https://img.shields.io/badge/Created-Mars%202021-%23EEE?style=flat)
 
 
+![Web App](https://img.shields.io/website?url=https%3A%2F%2Fapp.taigachat.se&up_message=Reachable&down_message=Problems&label=Web%20App)
+![Login Service](https://img.shields.io/website?url=https%3A%2F%2Flogin.taigachat.se%2F&up_message=Reachable&down_message=Problems&label=Login%20Service)
 
-This repository contains source code
-for the TaigaChat client. As well as source code for the reference
-server implementation. The code is licensed under AGPL-3.0
-(for more information see the NOTICE file)
-but a private license can be obtained by contacting
+TaigaChat is the new all-in-one communications platform where decentralization meets practical use.
+The mission of TaigaChat is to create a platform where users can easily & safely communicate with large groups of people, colloquially known as an online community.
+For an online community to work in the long term sustainably, the community must be able to control all aspects of its community.
+The current unfortunate status quo is that online tech giants are able to control, everything.
+Leaving very little up to the individual to decide.
+TaigaChat seeks to remedy this situation by giving back control.
+
+## Contents
+This monorepo contains both the client and the reference server implementation.
+The code is licensed under AGPL-3.0 (for more information see the NOTICE file) but a private license can be obtained by contacting
 [Alexander Björkman](https://github.com/sashabjorkman).
 
-## What is TaigaChat?
-TaigaChat is a decentralized chat-client. Anyone should be able to self-host their
-own server. And the standard should not be dependent on any central service. Any
-centralized service in TaigaChat is there purely for the convinience of those
+## Goals
+The goal of TaigaChat is to be a decentralized chat-client.
+Anyone should be able to self-host their own server.
+And the standard should not be dependent on any central service nor any federated services.
+Any centralized / federated service in TaigaChat is there purely for the convinience and practicality of those
 that are less concious about their online presence.
 
-TaigaChat in its current state has (a):
+## Current State
+TaigaChat in its current state has:
 1. Voice Calls
 2. Chat Rooms
 3. Web Client
@@ -77,13 +83,7 @@ pnpm i
 node --experimental-strip-types server.js
 ```
 Configuration can be done by setting environment variables. These environment variables
-should always start with `TAIGACHAT_*` and the definitions (for the server) can be found
+should always start with `TAIGACHAT_SERVER_*` and the definitions (for the server) can be found
 [here](Server/Source/config.ts).
 
-## Building
-For building the project please see:
-[Building The Client](Client/building.md)
-[Building The Server](Server/building.md)
-
 Copyright © 2025, Alexander Björkman
-
