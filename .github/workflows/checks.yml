@@ -16,9 +16,9 @@ jobs:
         version: 10
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
-      working-directory: ./Client
       with:
         node-version: ${{ matrix.node-version }}
+        cache-dependency-path: ./Client/pnpm-lock.yaml
         cache: 'pnpm'
     - name: Install dependencies
       working-directory: ./Client
